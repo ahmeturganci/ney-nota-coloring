@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import NeySvg from './components/NeySvg';
-import Menu from './components/Menu';
 import './App.css';
-import AnimatedMusicNotes from './components/AnimatedMusicNotes';
+import { AnimatedMusicNotes, NeySvg, Menu } from './components';
 
 const App: React.FC = () => {
   const [clearTrigger, setClearTrigger] = useState<number>(0);
@@ -19,7 +17,6 @@ const App: React.FC = () => {
   
       const img = new Image();
       img.onload = () => {
-        // Get SVG dimensions from viewBox
         const viewBox = svg.viewBox.baseVal;
         const rect = svg.getBoundingClientRect();
         
@@ -30,7 +27,6 @@ const App: React.FC = () => {
         const ctx = canvas.getContext('2d');
         if (!ctx) return;
   
-        // Scale context to match SVG dimensions
         const scale = Math.min(
           viewBox.width / rect.width,
           viewBox.height / rect.height

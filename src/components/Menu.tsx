@@ -8,7 +8,6 @@ import './Menu.css';
 interface MenuProps {
   onClear: () => void;
   onExport: () => void;
-  onFillAll: () => void;
 }
 
 const Menu: React.FC<MenuProps> = ({ onClear, onExport }) => {

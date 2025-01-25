@@ -1,0 +1,44 @@
+.svg-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered-svg {
+  height: 90vh;
+  width: auto;
+  max-width: 90vw;
+}
+
+
+path[id^='hole-'] {
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+
+path[id^='hole-']:hover {
+  opacity: 0.8;
+  fill: orange;
+}
+
+.percentage-menu {
+    background: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 4px 0;
+    margin: 0;
+    list-style: none;
+    min-width: 60px;
+}
+
+.percentage-menu li {
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.percentage-menu li:hover {
+    background:rgb(248, 141, 0);
+}

@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+# ney-nota-coloring 🎼  
+<img width="1468" alt="image" src="https://github.com/user-attachments/assets/d550af51-f0df-4890-b31c-d957e34a9e26" />
+A simple React application that allows users to mark notes on a Ney flute diagram online.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features  
+- Interactive Ney flute diagram and can download
+- Ability to select and mark notes  
+- Built with React, Vite, and TypeScript  
 
-Currently, two official plugins are available:
+## Installation & Run  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```sh
+# Clone the repository
+git clone <repo-url>
 
-## Expanding the ESLint configuration
+# Navigate into the project folder
+cd ney-notation-marker
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# Install dependencies
+npm install
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Start the development server
+npm run dev
